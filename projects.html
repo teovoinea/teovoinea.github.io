@@ -51,6 +51,13 @@
                 <td>C#</td>
             </tr>
         </table>
+        <div class="C#">
+            <div id="LoLOCR"></div>
+            <div id="MapMyRoute"></div>
+        </div>
+        <div class="HTML">
+            <div id="portfolio"></div>
+        </div>
     </div>
     <div class="sidebar">
         <img src="Display%20Picture.jpg">
@@ -73,4 +80,14 @@
   ga('create', 'UA-61160079-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" text="text/javascript"></script>
+<script src="repo.js" text="text/javascript"></script>
+<script>
+jQuery(function($){
+  $('pre').vanGogh();
+  $('#LoLOCR').repo({ user: 'teovoinea', name: 'LoLOCR' });
+  $('#portfolio').repo({ user: 'teovoinea', name: 'teovoinea.github.io' });
+  $('#MapMyRoute').repo({ user: 'teovoinea', name: 'Map-My-Route' });
+});
 </script>
