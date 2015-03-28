@@ -1,3 +1,4 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Sidebar CSS~~~~~~~~~~~~~~~~~~~~*/
 ul{
     list-style-type:none;
     margin: 0;
@@ -57,9 +58,95 @@ td{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-table{
-    padding-top: 250px;
+
+
+.TopPadding{
+    padding-bottom: 200px;
 }
-LoLOCR {
-    visibility: none;
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~C# Projects~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*C# Project Container*/
+.CSharp{
+    color: white;
+    border: 0px;
+    background-color: #193147;
+}
+.CSharp h3{
+    font-size: 20px;
+    text-align: center;
+}
+.CSharp h2{
+    font-size: 15px;
+    text-align: center;
+}
+.CSharp h1{
+    text-align: center;
+}
+/*OCR Container*/
+.OCRContain{
+    background-color: #161816;
+    border: none;
+    height: 100px;
+}
+.OCRContain:hover #LoLOCR{
+    visibility: visible;
+}
+.OCRContain:hover{
+    height:500px;
+}
+/*Map My Route Container*/
+.MMRContain:hover{
+    height:500px;
+}
+.MMContain:hover #MapMyRoute{
+    visibility: visible;
+}
+.MMRContain{
+    background-color: #161816;
+    border: none;
+    height: 100px;
+}
+/*LoLOCR Show on hover*/
+#LoLOCR{
+    visibility: hidden;
+}
+#LoLOCR:hover{
+    visibility: visible;
+}
+/*Map My Route show on hover*/
+#MapMyRoute{
+    visibility: hidden;
+}
+#MapMyRoute:hover{
+    visibility: visible;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~HTML/CSS?Javascript Projects~~~~~~~~~~~~~~*/
+.HTML{
+    color: white;
+    border: 0px;
+    background-color: #193147;
+}
+.HTML h3{
+    font-size: 20px;
+    text-align: center;
+}
+.PortfolioContain{
+    background-color: #161816;
+    border: none;
+    height: 100px;
+}
+.PortfolioContain:hover #portfolio{
+    visibility: visible;
+}
+.PortfolioContain:hover{
+    height:500px;
+}
+#portfolio{
+    visibility: hidden;
+}
+#portfolio:hover{
+    visibility: visible;
 }
