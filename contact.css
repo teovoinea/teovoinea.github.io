@@ -60,3 +60,15 @@ h1{
     background-color: #001F3D;
     border: none;
 }
+footer{
+    display: inline;
+    color:#5f5f81;
+    float:right;
+    font-size: 10px;
+    font: monospace;
+}
+footer a{
+    text-decoration: none;
+    color:#5f5f81;
+}
+

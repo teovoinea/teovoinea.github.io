@@ -41,3 +41,14 @@ h1{
     min-height: 700px;
     left: -1px
 }
+footer{
+    display: inline;
+    color:#5f5f81;
+    float:right;
+    font-size: 10px;
+    font: monospace;
+}
+footer a{
+    text-decoration: none;
+    color:#5f5f81;
+}
