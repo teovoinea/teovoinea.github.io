@@ -35,7 +35,6 @@ h1{
     background-color: #161816;
     border-color: none;
     position: absolute;
-    z-index: -1;
     top: 0px;
     bottom: 0px;
     overflow: hidden;
@@ -72,8 +71,17 @@ footer a{
 
 
 
-.TopPadding{
-    padding-bottom: 200px;
+#title{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    padding-top: 3%;
+    padding-left: 2%;
+    margin-left: 250px;
+    position: center;
+    color: #99A5B1;
+    padding-bottom: 50px;
 }
 
 
