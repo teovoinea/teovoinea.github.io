@@ -63,25 +63,105 @@ footer a{
     color: #99A5B1;
 }
 .skills{
-    margin-top: 11%;
+    margin-top: 8%;
     margin-left: 15%;
     width: 80%;
     font-family: monospace;
     text-align: left;
 }
-.skills ul{
-    list-style-position: inside;
+.languages{
+    color: white;
+    background-color: #193147;
+    height:50px;
 }
-.skills h3{
-    padding: 0px;
-    color: #c3c3c3;
-    background-color: none;
+.languages:hover ul{
+    visibility: visible;
 }
-.skills h2{
-    color:#99A5B1;
+.languages:hover{
+    height:180px;
+}
+.languages h3{
+    font-size: 20px;
     text-align: left;
 }
-.skills li{
-    padding-left: 50px;
+.languages h2{
+    text-align: left;
+    text-indent: 20px;
+    font-size:30px;
 }
-
+.languages ul{
+    list-style-position: inside;
+    visibility: hidden;
+}
+.hardware{
+    color: white;
+    background-color: #193147;
+    height:50px;
+}
+.hardware:hover ul{
+    visibility: visible;
+}
+.hardware:hover{
+    height:140px;
+}
+.hardware h3{
+    font-size: 20px;
+    text-align: left;
+}
+.hardware h2{
+    text-align: left;
+    text-indent: 20px;
+    font-size:30px;
+}
+.hardware ul{
+    list-style-position: inside;
+    visibility: hidden;
+}
+.os{
+    color: white;
+    background-color: #193147;
+    height:50px;
+}
+.os:hover ul{
+    visibility: visible;
+}
+.os:hover{
+    height:140px;
+}
+.os h3{
+    font-size: 20px;
+    text-align: left;
+}
+.os h2{
+    text-align: left;
+    text-indent: 20px;
+    font-size:30px;
+}
+.os ul{
+    list-style-position: inside;
+    visibility: hidden;
+}
+.dbs{
+    color: white;
+    background-color: #193147;
+    height:50px;
+}
+.dbs:hover ul{
+    visibility: visible;
+}
+.dbs:hover{
+    height:140px;
+}
+.dbs h3{
+    font-size: 20px;
+    text-align: left;
+}
+.dbs h2{
+    text-align: left;
+    text-indent: 20px;
+    font-size:30px;
+}
+.dbs ul{
+    list-style-position: inside;
+    visibility: hidden;
+}
