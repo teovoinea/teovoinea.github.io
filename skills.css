@@ -80,6 +80,9 @@ footer a{
     height:180px;
     background-color: #193147;
 }
+.languages:hover h2{
+    background-color: #001F3D;
+}
 .languages h3{
     font-size: 20px;
     text-align: left;
@@ -88,6 +91,7 @@ footer a{
     text-align: left;
     text-indent: 20px;
     font-size:30px;
+    background-color: black;
 }
 .languages ul{
     list-style-position: inside;
@@ -99,6 +103,9 @@ footer a{
 }
 .hardware:hover ul{
     visibility: visible;
+}
+.hardware:hover h2{
+    background-color: #001F3D;
 }
 .hardware:hover{
     height:140px;
@@ -112,6 +119,7 @@ footer a{
     text-align: left;
     text-indent: 20px;
     font-size:30px;
+    background-color: black;
 }
 .hardware ul{
     list-style-position: inside;
@@ -128,6 +136,9 @@ footer a{
     height:140px;
     background-color: #193147;
 }
+.os:hover h2{
+    background-color: #001F3D;
+}
 .os h3{
     font-size: 20px;
     text-align: left;
@@ -136,6 +147,7 @@ footer a{
     text-align: left;
     text-indent: 20px;
     font-size:30px;
+    background-color: black;
 }
 .os ul{
     list-style-position: inside;
@@ -152,6 +164,9 @@ footer a{
     height:140px;
     background-color: #193147;
 }
+.dbs:hover h2{
+    background-color: #001F3D;
+}
 .dbs h3{
     font-size: 20px;
     text-align: left;
@@ -160,6 +175,7 @@ footer a{
     text-align: left;
     text-indent: 20px;
     font-size:30px;
+    background-color: black;
 }
 .dbs ul{
     list-style-position: inside;
