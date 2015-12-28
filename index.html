@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<title>Teodor Voinea</title>
-		 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-indigo.min.css" /> 
+		<style type="text/css">
+			::-webkit-scrollbar{
+				display:none;
+			}
+		</style>
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-indigo.min.css" /> 
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
@@ -70,10 +75,12 @@
 				  </div>
 				</div>
 				</div>
-				  <!--Work Experience Left Half-->
-			  	<div class="mdl-cell mdl-cell--12-col" >				
+				<!-- Div to wrap both tables to get them to be the same size -->
+				<div class="mdl-cell mdl-cell--10-col">
+				<!--Work Experience Left Half-->
+			  	<div class="mdl-cell mdl-cell--10-col" style="width: 100%;" >				
 					<h1 class="mdl-layout-title" style="color: white; text-align: center;">Work Experience</h1>
-					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto;">
+					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto; width:100%;">
 						  <thead>
 							<tr>
 							  <th class="mdl-data-table__cell--non-numeric" style="text-align: left">Where</th>
@@ -87,35 +94,30 @@
 							  <td class="mdl-data-table__cell--non-numeric">Galderma Canada</td>
 							  <td>IT Intern</td>
 							  <td>July-August 2014</td>
-							  <td>
-								  <ul style="list-style-type:none; text-align:left;">
-								  	  <li>Took Canada-wide technical support calls.</li>
-									  <li>Local user device maintenance and support.</li>
-									  <li>Reconfigure internal network</li>
-									  <li>Server maintenance and support</li>
-								  </ul>								  
+							  <td style="text-align:left;">
+								  	<p>Took Canada-wide technical support calls.</p>
+									<p>Local user device maintenance and support.</p>
+									<p>Reconfigure internal network</p>
+									<p>Server maintenance and support</p>						  
 							  </td>
 							</tr>
 							<tr>
 							  <td class="mdl-data-table__cell--non-numeric">Galderma Canada</td>
 							  <td>IT Co-Op</td>
 							  <td>February-June 2013</td>
-							  <td>
-								  <ul style="list-style-type:none; text-align:left;">
-								  	<li>Local user device maintenance and support.</li>
-									<li>Server maintenance and support</li>
-									<li>Order sample shipments across Canada for sales representatives</li>
-								  </ul>
-								
+							  <td style="text-align:left;">
+								  	<p>Local user device maintenance and support.</p>
+									<p>Server maintenance and support</p>
+									<p>Order sample shipments across Canada for sales representatives</p>
 							  </td>
 							</tr>
 						  </tbody>
 						</table>					
 				</div>
 				<!--Volunteer Experience Right Half -->
-				<div class="mdl-cell mdl-cell--12-col">
+				<div class="mdl-cell mdl-cell--10-col" style="width:100%;">
 					<h1 class="mdl-layout-title" style="color: white; text-align:center;">Volunteer Experience</h1>
-					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto;">
+					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto; width:100%;">
 						  <thead>
 							<tr>
 							  <th class="mdl-data-table__cell--non-numeric" style="text-align: left">Where</th>
@@ -169,6 +171,7 @@
 						  </tbody>
 						</table>
 				</div>
+				</div><!-- table wrapping div -->
 			  </div>
 		  </main>
 		</div>
