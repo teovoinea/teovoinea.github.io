@@ -56,16 +56,19 @@ background-size: 20px 20px;">
 		  <main class="mdl-layout__content">
 			  
 			  <div class="mdl-grid">
-				<div class="mdl-cell mdl-cell--12-col">
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--1-col-tablet"></div>
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--6-col-tablet">
 				  <!-- Wide card with share menu button -->
 				<style>
 				  .demo-card-wide.mdl-card {
-					width: 512px;;
+					width: 100%;
 				  }
 				  .demo-card-wide > .mdl-card__title {
 					color: #fff;
 					height: 176px;
 					background: url(about.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
 				  }
 				  .demo-card-wide > .mdl-card__menu {
 					color: #fff;
@@ -82,10 +85,13 @@ background-size: 20px 20px;">
 				  </div>
 				</div>
 				</div>
+				  
+			  </div>
+			  <div class="mdl-grid">
 				<!--Work Experience Left Half-->
-			  	<div class="mdl-cell mdl-cell--10-col" style="width: 100%;" >				
+			  	<div class="mdl-cell mdl-cell--12-col" >				
 					<h1 class="mdl-layout-title" style="color: white; text-align: center;">Work Experience</h1>
-					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto; width:100%;">
+					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto;">
 						  <thead>
 							<tr>
 							  <th class="mdl-data-table__cell--non-numeric" style="text-align: left">Where</th>
@@ -119,10 +125,12 @@ background-size: 20px 20px;">
 						  </tbody>
 						</table>					
 				</div>
+			  </div>
+			  <div class="mdl-grid">
 				<!--Volunteer Experience Right Half -->
-				<div class="mdl-cell mdl-cell--10-col" style="width:100%;">
+				<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
 					<h1 class="mdl-layout-title" style="color: white; text-align:center;">Volunteer Experience</h1>
-					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto; width:100%;">
+					  <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp" style="margin: 0 auto;">
 						  <thead>
 							<tr>
 							  <th class="mdl-data-table__cell--non-numeric" style="text-align: left">Where</th>
@@ -176,6 +184,7 @@ background-size: 20px 20px;">
 						  </tbody>
 						</table>
 				</div>
+			  </div>
 				<!-- </div>table wrapping div -->
 			  </div>
 		  </main>
