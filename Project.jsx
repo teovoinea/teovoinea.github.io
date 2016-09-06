@@ -9,11 +9,13 @@ class Project extends Component{
 			      image: props.image,
 			      title: props.title,
 			      description: props.description,
-			      demo: props.demo};
+			      demo: props.demo,
+			      style: props.style
+			     };
 	}
 	render() {
 		return (
-			<div>
+			<div style={this.state.style}>
 				<h1>{this.state.title}</h1>
 				<img src={this.state.img}/>
 				<p>{this.state.description}</p>
@@ -35,7 +37,8 @@ Project.defaultProps = {url: "http://google.com",
 			image: "http://google.com",
 			title: "Example Project",
 			description: "Example Description",
-			demo: "http://wikipedia.org"
+			demo: "http://wikipedia.org",
+			style: {'backgroundColor': 'blue'}
 			};
 
 export default Project;
