@@ -1,7 +1,7 @@
-#footer {
+#footer, #header {
 	text-align: center;
 }
 
-.footer-line{
+.footer-line, .header-line{
 	display: inline-block;
 }

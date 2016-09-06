@@ -9,6 +9,23 @@
 
 	<body>
 		<div id="header">
+			<div class="header-line">
+				<h1>Teodor Voinea</h1>
+				<br>
+				<p id="dynamic-oneliner">Undergraduate Computer Science Student at McMaster University</p>
+			</div>
+			<script>
+				var stringCount = 0;
+				var oneliners = ["Undergraduate Computer Science Student at McMaster University",
+						 "Hackathon Hacker",
+						 "Open Source Software Supporter",
+						 "Linux Enthusiast"];
+				setInterval(function() {
+						document.getElementById('dynamic-oneliner').innerHTML = oneliners[stringCount % oneliners.length];
+						stringCount++;
+					},
+				5000);
+			</script>
 		</div>
 
 		<p> This is a test </p>
