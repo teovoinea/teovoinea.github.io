@@ -5,31 +5,31 @@ class App extends Component{
 	render() {
 		return (
 			<div>
-				<div style={{'text-align': 'center'}}>
-					<Project url="google.com"
-						title="sample project"
+				<div style={{'textAlign': 'center'}}>
+					<Project account="teovoinea"
+						title="glifrp"
 						description="desc"
 						demo="wikipedia.org"
 						style={{'width': '33%', 
 							'display': 'inline-block'
 						}}
 					 />
-					
-					<Project url="github.com"
-						title="test project"
-						description="this is a description"
-						demo="reddit.com"
-						style={{'width': '33%',
-							'display': 'inline-block'}} 
-					/>
-
-					<Project url="w3.org"
-						title="final project"
-						description="last description"
-						demo="news.ycombinator.com"
-						style={{'width': '33%',
-							'display': 'inline-block'}} 
-					/>	
+					<Project account="teovoinea"
+						title="teovoinea.github.io"
+						description="desc"
+						demo="wikipedia.org"
+						style={{'width': '33%', 
+							'display': 'inline-block'
+						}}
+					 />
+					<Project account="rtemelkovski"
+						title="memnotes"
+						description="desc"
+						demo="wikipedia.org"
+						style={{'width': '33%', 
+							'display': 'inline-block'
+						}}
+					 />
 				</div>
 			</div>
 		);
