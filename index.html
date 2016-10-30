@@ -3,43 +3,52 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Teodor Voinea</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 
 	<body>
-		<div id="header">
-			<div class="header-line">
-				<h1>Teodor Voinea</h1>
-				<br>
-				<p id="dynamic-oneliner">Undergraduate Computer Science Student at McMaster University</p>
-			</div>
-			<script>
-				var stringCount = 0;
-				var oneliners = ["Undergraduate Computer Science Student at McMaster University",
-						 "Hackathon Hacker",
-						 "Open Source Software Supporter",
-						 "Linux Enthusiast"];
-				setInterval(function() {
-						document.getElementById('dynamic-oneliner').innerHTML = oneliners[stringCount % oneliners.length];
-						stringCount++;
-					},
-				5000);
-			</script>
+		<div class="container-fluid">
+				<div class="row" id="header">
+					<div class="col-md-12">
+						<div class="header-line">
+								<h1>Teodor Voinea</h1>
+								<br>
+								<p id="dynamic-oneliner">Undergraduate Computer Science Student at McMaster University</p>
+						</div>
+					</div>
+					<script>
+						var stringCount = 0;
+						var oneliners = ["Undergraduate Computer Science Student at McMaster University",
+								 "Hackathon Hacker",
+								 "Open Source Software Supporter",
+								 "Linux Enthusiast"];
+						setInterval(function() {
+								document.getElementById('dynamic-oneliner').innerHTML = oneliners[stringCount % oneliners.length];
+								stringCount++;
+							},
+						5000);
+					</script>
+				</div>
+
+				<div class="row" id="app"></div>
+
+				<div class="row" id="footer">
+					<div class="col-md-12">
+							<div class="footer-line">
+								<a href="github.com/teovoinea"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+								<a href="linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+								<br>
+								Teodor Voinea - 2016
+							</div>
+					</div>
+				</div>
+				<script src="index.js"></script>
 		</div>
-
-		<div id="app"></div>
-
-		<div id="footer">
-			<div class="footer-line">
-				<a href="github.com/teovoinea">github</a>
-				<a href="linkedin.com">linkedIn</a>
-
-				<br>
-				Teodor Voinea - 2016
-			</div>
-		</div>
-		<script src="index.js"></script>
 	</body>
 </html>

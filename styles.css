@@ -8,8 +8,24 @@
 
 #header {
 	padding-bottom: 10%;
+	height: 200px;
 }
 
+a{
+	color: black;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+/*
 .footer-line, .header-line{
-	display: inline-block;
+	height: 80px;
+}
+*/
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
 }
