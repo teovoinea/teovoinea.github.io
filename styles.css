@@ -8,7 +8,7 @@
 
 #header {
 	padding-bottom: 10%;
-	height: 200px;
+	height: 70px;
 }
 
 a{
@@ -23,9 +23,9 @@ img{
 .footer-line, .header-line{
 	height: 80px;
 }
-*/
+
 * {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-}
+}*/

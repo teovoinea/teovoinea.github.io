@@ -40,8 +40,8 @@ class Project extends Component{
 		//TODO (teo): demo <a href={this.state.demo}>Demo</a> 
 		return (
 			<div className={this.state.bootstrap} style={this.state.style}>
-				<h1>{this.state.name}</h1>
 				<img src={this.state.img}></img>
+				<h2>{this.state.name}</h2>
 				<p>{this.state.description}</p>
 				<a href={this.state.url}>URL</a>
 			</div>
@@ -59,7 +59,6 @@ Project.propTypes = {account: React.PropTypes.string,
 
 Project.defaultProps = {account: 'teovoinea',
 			title: 'glifrp',
-			bootstrap: 'col-md-4',
 			style: {textAlign: 'center'}
 			};
 
