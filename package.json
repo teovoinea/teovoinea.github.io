@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "release": "NODE_ENV=production webpack --optimize-minimize"
   },
   "author": "Teodor Voinea",
   "license": "ISC",
