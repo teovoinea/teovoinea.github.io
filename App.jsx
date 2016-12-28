@@ -7,14 +7,9 @@ class App extends Component{
 		return (
 				<div>
 				<MediaQuery query='(max-width: 1224px)'>
-						<div className="container-fluid col-md-12">
-							<div className="row">
-								<div id="projectCarousel" className="carousel slide" data-ride="carousel" style={{top: '5%'}}>
-									<ol className="carousel-indicators">
-										<li data-target="#projectCarousel" data-slide-to="0" className="active"></li>
-										<li data-target="#projectCarousel" data-slide-to="1"></li>
-										<li data-target="#projectCarousel" data-slide-to="2"></li>
-									</ol>
+						<div className="container-fluid">
+							<div className="row" style={{paddingTop: '15%'}}>
+								<div id="projectCarousel" className="carousel slide" data-ride="carousel" data-interval="false">
 
 									<div className="carousel-inner" role="listbox">
 										<div className="item active">
@@ -24,7 +19,7 @@ class App extends Component{
 												demo="wikipedia.org"
 												image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
-
+												bootstrap="text-center"
 											 />
 										</div>
 										<div className="item">
@@ -32,7 +27,9 @@ class App extends Component{
 												title="teovoinea.github.io"
 												description="desc"
 												demo="wikipedia.org"
+												image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
+												bootstrap="text-center"
 											 />
 										</div>
 										<div className="item">
@@ -42,9 +39,12 @@ class App extends Component{
 												demo="wikipedia.org"
 												image="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/334/309/datas/gallery.jpg"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
+												bootstrap="text-center"
 											 />
 										</div>
 									</div>
+								</div>
+								<div className="carousel-controls">
 									<a className="left carousel-control" href="#projectCarousel" role="button" data-slide="prev">
 											<span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 											<span className="sr-only">Previous</span>
@@ -72,6 +72,7 @@ class App extends Component{
 								description="desc"
 								demo="wikipedia.org"
 								bootstrap="col-md-4"
+								image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
 							 />
 							<Project account="rtemelkovski"
 								title="memnotes"
