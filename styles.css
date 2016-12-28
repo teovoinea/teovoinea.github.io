@@ -1,0 +1,46 @@
+#footer, #header {
+	text-align: center;
+}
+
+#footer {
+	padding-top: 10%;
+}
+
+#header {
+	padding-bottom: 10%;
+	height: 70px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+}
+
+.carousel-controls{
+ position:relative; 
+  width:300px;
+  margin:0 auto;
+}
+
+.carousel-indicators{
+   top:0px; 
+}
+
+.carousel-control{
+	color:grey;
+}
+/*
+.footer-line, .header-line{
+	height: 80px;
+}
+
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
