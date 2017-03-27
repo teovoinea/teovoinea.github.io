@@ -21,8 +21,18 @@ img{
 	width: 100%;
 }
 
+.btn{
+	align-self: center;
+}
+
 .project-desc{
-	height: 100%;
+	display: flex;
+	align-self: center;
+	flex-grow: 2;
+}
+
+.image-padding{
+	flex-grow: 3;
 }
 
 .carousel-controls{
@@ -57,6 +67,7 @@ img{
 .row.is-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /*

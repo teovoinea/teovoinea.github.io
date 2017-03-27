@@ -70,7 +70,7 @@ class App extends Component{
 									title="PGP2IMG"
 									description=""
 									bootstrap="col-md-4"
-									image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
+									image="pgp2img.png"
 								 />
 								<Project account="rtemelkovski"
 									title="memnotes"

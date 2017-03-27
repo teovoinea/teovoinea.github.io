@@ -41,6 +41,7 @@ class Project extends Component{
 		return (
 			<div className={this.state.bootstrap} style={this.state.style}>
 				<img src={this.state.img}></img>
+				<div className={"image-padding"}></div>
 				<h3>{this.state.name}</h3>
 				<p className={"project-desc"}>{this.state.description}</p>
 				<a href={this.state.url} className="btn btn-default" role="button">Source</a>
