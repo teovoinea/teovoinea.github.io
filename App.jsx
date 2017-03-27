@@ -59,28 +59,25 @@ class App extends Component{
 			</MediaQuery>
 			<MediaQuery query='(min-device-width: 1224px)'>
 					<div className="container-fluid col-md-12">
-						<div className="row">
-							<Project account="teovoinea"
-								title="glifrp"
-								description="desc"
-								demo="wikipedia.org"
-								image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
-								bootstrap="col-md-4"
-							 />
-							<Project account="teovoinea"
-								title="teovoinea.github.io"
-								description="desc"
-								demo="wikipedia.org"
-								bootstrap="col-md-4"
-								image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
-							 />
-							<Project account="rtemelkovski"
-								title="memnotes"
-								description="desc"
-								demo="wikipedia.org"
-								image="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/334/309/datas/gallery.jpg"
-								bootstrap="col-md-4"
-							 />
+						<div className="row is-flex">
+								<Project account="teovoinea"
+									title="glifrp"
+									description="desc"
+									image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
+									bootstrap="col-md-4"
+								 />
+								<Project account="icefalcn"
+									title="PGP2IMG"
+									description=""
+									bootstrap="col-md-4"
+									image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
+								 />
+								<Project account="rtemelkovski"
+									title="memnotes"
+									description="desc"
+									image="memnote.png"
+									bootstrap="col-md-4"
+								 />
 						</div>
 					</div>
 			</MediaQuery>

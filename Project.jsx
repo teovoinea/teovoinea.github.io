@@ -42,7 +42,7 @@ class Project extends Component{
 			<div className={this.state.bootstrap} style={this.state.style}>
 				<img src={this.state.img}></img>
 				<h3>{this.state.name}</h3>
-				<p>{this.state.description}</p>
+				<p className={"project-desc"}>{this.state.description}</p>
 				<a href={this.state.url} className="btn btn-default" role="button">Source</a>
 			</div>
 		);
