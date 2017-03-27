@@ -11,7 +11,10 @@ class Project extends Component{
 			title: props.title,
 			style: props.style,
 			img: props.image,
-			bootstrap: props.bootstrap
+			bootstrap: props.bootstrap,
+			description: props.description,
+			imagepadding: props.imagepadding == "true" ? true : false,
+			textpadding: props.textpadding == "true" ? true : false
 		};	
 	}
 
@@ -28,7 +31,7 @@ class Project extends Component{
 					url: result.html_url,
 					img: this.state.img,
 					//TODO (teo): demo
-					description: result.description,
+					description: this.state.description == "" ? result.description : this.state.description,
 					style: this.state.style,
 					bootstrap: this.state.bootstrap	
 				});
@@ -41,9 +44,9 @@ class Project extends Component{
 		return (
 			<div className={this.state.bootstrap} style={this.state.style}>
 				<img src={this.state.img}></img>
-				<div className={"image-padding"}></div>
+				<div className={this.state.imagepadding?"image-padding":""}></div>
 				<h3>{this.state.name}</h3>
-				<p className={"project-desc"}>{this.state.description}</p>
+				<p className={this.state.textpadding?"project-desc":""}>{this.state.description}</p>
 				<a href={this.state.url} className="btn btn-default" role="button">Source</a>
 			</div>
 		);
@@ -60,7 +63,9 @@ Project.propTypes = {account: React.PropTypes.string,
 
 Project.defaultProps = {account: 'teovoinea',
 			title: 'glifrp',
-			style: {textAlign: 'center'}
+			style: {textAlign: 'center'},
+			imagepadding: false,
+			textpadding: false
 			};
 
 export default Project;

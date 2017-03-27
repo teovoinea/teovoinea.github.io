@@ -15,19 +15,21 @@ class App extends Component{
 										<div className="item active">
 											<Project account="teovoinea"
 												title="glifrp"
-												description="desc"
-												demo="wikipedia.org"
+												description=""
 												image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
 												bootstrap="text-center"
 											 />
 										</div>
 										<div className="item">
-											<Project account="teovoinea"
-												title="teovoinea.github.io"
-												description="desc"
-												demo="wikipedia.org"
-												image="https://raw.githubusercontent.com/teovoinea/teovoinea.github.io/dev/website.png"
+											<Project account="icefalcn"
+												title="PGP2IMG"
+												description="PGP2IMG utilizes keybase's public key encryption which also provides verifiable identities so your work can never be impersonated
+
+Advanced steganography techniques securely transport and store your files
+
+Make sure your files get back home even through the most oppressive government regimes"
+												image="pgp2img.png"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
 												bootstrap="text-center"
 											 />
@@ -35,11 +37,11 @@ class App extends Component{
 										<div className="item">
 											<Project account="rtemelkovski"
 												title="memnotes"
-												description="desc"
-												demo="wikipedia.org"
+												description=""
 												image="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/334/309/datas/gallery.jpg"
 												style={{paddingBottom: '5%', paddingTop: '5%'}}
 												bootstrap="text-center"
+												textpadding="true"
 											 />
 										</div>
 									</div>
@@ -62,19 +64,25 @@ class App extends Component{
 						<div className="row is-flex">
 								<Project account="teovoinea"
 									title="glifrp"
-									description="desc"
+									description=""
 									image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
 									bootstrap="col-md-4"
 								 />
 								<Project account="icefalcn"
 									title="PGP2IMG"
-									description=""
+									description="PGP2IMG utilizes keybase's public key encryption which also provides verifiable identities so your work can never be impersonated
+
+Advanced steganography techniques securely transport and store your files
+
+Make sure your files get back home even through the most oppressive government regimes"
 									bootstrap="col-md-4"
+									imagepadding= "true"
 									image="pgp2img.png"
 								 />
 								<Project account="rtemelkovski"
 									title="memnotes"
-									description="desc"
+									textpadding= "true"
+									description=""
 									image="memnote.png"
 									bootstrap="col-md-4"
 								 />
