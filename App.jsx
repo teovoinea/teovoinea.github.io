@@ -2,94 +2,48 @@ import React from 'react';
 import {Component} from 'react';
 import Project from './Project.jsx';
 class App extends Component{
+
+	componentDidMount() {
+		$("#slick-scroll").slick({
+			dots: true,
+			  infinite: true,
+			  speed: 300,
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+		});
+	}
+
 	render() {
-		var MediaQuery = require('react-responsive');
 		return (
 				<div>
-				<MediaQuery query='(max-width: 1224px)'>
-						<div className="container-fluid">
-							<div className="row" style={{paddingTop: '15%'}}>
-								<div id="projectCarousel" className="carousel slide" data-ride="carousel" data-interval="false">
-
-									<div className="carousel-inner" role="listbox">
-										<div className="item active">
-											<Project account="teovoinea"
-												title="glifrp"
-												description=""
-												image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
-												style={{paddingBottom: '5%', paddingTop: '5%'}}
-												bootstrap="text-center"
-											 />
-										</div>
-										<div className="item">
-											<Project account="icefalcn"
-												title="PGP2IMG"
-												description="PGP2IMG utilizes keybase's public key encryption which also provides verifiable identities so your work can never be impersonated
-
-Advanced steganography techniques securely transport and store your files
-
-Make sure your files get back home even through the most oppressive government regimes"
-												image="pgp2img.png"
-												style={{paddingBottom: '5%', paddingTop: '5%'}}
-												bootstrap="text-center"
-											 />
-										</div>
-										<div className="item">
-											<Project account="rtemelkovski"
-												title="memnotes"
-												description=""
-												image="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/334/309/datas/gallery.jpg"
-												style={{paddingBottom: '5%', paddingTop: '5%'}}
-												bootstrap="text-center"
-												textpadding="true"
-											 />
-										</div>
-									</div>
-								</div>
-								<div className="carousel-controls">
-									<a className="left carousel-control" href="#projectCarousel" role="button" data-slide="prev">
-											<span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-											<span className="sr-only">Previous</span>
-									</a>
-									<a className="right carousel-control" href="#projectCarousel" role="button" data-slide="next">
-										<span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-										<span className="sr-only">Next</span>
-									</a>
-								</div>
-							</div>
-						</div>
-			</MediaQuery>
-			<MediaQuery query='(min-device-width: 1224px)'>
-					<div className="container-fluid col-md-12">
-						<div className="row is-flex">
+					<div className="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+						<div id="slick-scroll">
 								<Project account="teovoinea"
 									title="glifrp"
 									description=""
 									image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
-									bootstrap="col-md-4"
 								 />
 								<Project account="icefalcn"
 									title="PGP2IMG"
 									description="PGP2IMG utilizes keybase's public key encryption which also provides verifiable identities so your work can never be impersonated
 
-Advanced steganography techniques securely transport and store your files
+	Advanced steganography techniques securely transport and store your files
 
-Make sure your files get back home even through the most oppressive government regimes"
-									bootstrap="col-md-4"
-									imagepadding= "true"
+	Make sure your files get back home even through the most oppressive government regimes"
 									image="pgp2img.png"
 								 />
 								<Project account="rtemelkovski"
 									title="memnotes"
-									textpadding= "true"
 									description=""
 									image="memnote.png"
-									bootstrap="col-md-4"
 								 />
+								<Project account="teovoinea"
+									title="steganography"
+									description=""
+								/>
 						</div>
 					</div>
-			</MediaQuery>
-			</div>
+				</div>
 		);
 	}
 }

@@ -13,8 +13,6 @@ class Project extends Component{
 			img: props.image,
 			bootstrap: props.bootstrap,
 			description: props.description,
-			imagepadding: props.imagepadding == "true" ? true : false,
-			textpadding: props.textpadding == "true" ? true : false
 		};	
 	}
 
@@ -44,9 +42,8 @@ class Project extends Component{
 		return (
 			<div className={this.state.bootstrap} style={this.state.style}>
 				<img src={this.state.img}></img>
-				<div className={this.state.imagepadding?"image-padding":""}></div>
 				<h3>{this.state.name}</h3>
-				<p className={this.state.textpadding?"project-desc":""}>{this.state.description}</p>
+				<p>{this.state.description}</p>
 				<a href={this.state.url} className="btn btn-default" role="button">Source</a>
 			</div>
 		);
