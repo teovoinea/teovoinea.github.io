@@ -8,7 +8,6 @@
     "release": "NODE_ENV=production webpack --optimize-minimize"
   },
   "author": "Teodor Voinea",
-  "license": "ISC",
   "dependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0",

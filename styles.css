@@ -22,8 +22,22 @@ img{
 	align-self: center;
 }
 
-.project-desc{
-	display: flex;
-	align-self: center;
-	flex-grow: 2;
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+display: flex;
+flex-direction: column;
+}
+
+.spacing {
+	height: 100%;
+}
+
+.project {
+	padding-bottom: 10%;
 }

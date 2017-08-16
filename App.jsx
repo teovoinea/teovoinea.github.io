@@ -3,46 +3,27 @@ import {Component} from 'react';
 import Project from './Project.jsx';
 class App extends Component{
 
-	componentDidMount() {
-		$("#slick-scroll").slick({
-			dots: true,
-			  infinite: true,
-			  speed: 300,
-			  slidesToShow: 1,
-			  slidesToScroll: 1,
-		});
-	}
-
 	render() {
 		return (
-				<div>
-					<div className="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-						<div id="slick-scroll">
-								<Project account="teovoinea"
-									title="glifrp"
-									description=""
-									image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
-								 />
-								<Project account="icefalcn"
-									title="PGP2IMG"
-									description="PGP2IMG utilizes keybase's public key encryption which also provides verifiable identities so your work can never be impersonated
-
-	Advanced steganography techniques securely transport and store your files
-
-	Make sure your files get back home even through the most oppressive government regimes"
-									image="pgp2img.png"
-								 />
-								<Project account="rtemelkovski"
-									title="memnotes"
-									description=""
-									image="memnote.png"
-								 />
-								<Project account="teovoinea"
-									title="steganography"
-									description=""
-								/>
-						</div>
-					</div>
+				<div className="row row-eq-height">
+					<Project account="teovoinea"
+						title="glifrp"
+						description="Geo webapp to find the best places to live"
+						image="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D"
+						bootstrap="col-md-4 col-sm-12"
+						/>
+					<Project account="icefalcn"
+						title="PGP2IMG"
+						description="Encrypt files or messages in plain sight"
+						image="pgp2img.png"
+						bootstrap="col-md-4 col-sm-12"
+						/>
+					<Project account="teovoinea"
+						title="steganography"
+						image="https://crates.io/assets/Cargo-Logo-Small-c39abeb466d747f3be442698662c5260.png"
+						description=""
+						bootstrap="col-md-4 col-sm-12"
+					/>
 				</div>
 		);
 	}

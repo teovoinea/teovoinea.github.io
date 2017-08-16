@@ -40,8 +40,10 @@ class Project extends Component{
 	render() {
 		//TODO (teo): demo <a href={this.state.demo}>Demo</a> 
 		return (
-			<div className={this.state.bootstrap} style={this.state.style}>
+			<div className={this.state.bootstrap + " project"} style={this.state.style}>
+				<div className="spacing"></div>
 				<img src={this.state.img}></img>
+				<div className="spacing"></div>
 				<h3>{this.state.name}</h3>
 				<p>{this.state.description}</p>
 				<a href={this.state.url} className="btn btn-default" role="button">Source</a>
