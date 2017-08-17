@@ -1,20 +1,25 @@
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
 #footer, #header {
 	text-align: center;
 }
 
-#footer {
-	padding-top: 10%;
-}
-
-#header {
-	padding-bottom: 10%;
-	height: 70px;
+p{
+	font-size: 1.3em;
 }
 
 a{
 	color: black;
 	text-decoration: none;
 	text-align: center;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 img{
@@ -25,74 +30,43 @@ img{
 	align-self: center;
 }
 
-.project-desc{
-	display: flex;
-	align-self: center;
-	flex-grow: 2;
+ul{
+	list-style: none;
+	padding-left: 0;
 }
 
-.image-padding{
-	flex-grow: 2;
+@media (min-width: 768px) {
+	.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+		flex-wrap: wrap;
+	}
+
+	.row > [class*='col-'] {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-.carousel-controls{
- position:relative; 
-  width:300px;
-  margin:0 auto;
+.spacing {
+	height: 100%;
 }
 
-.carousel-indicators{
-   top:0px; 
+.project {
+	padding-bottom: 10%;
 }
 
-.carousel-control{
-	color:grey;
+@font-face {
+	font-family: Raleway;
+	src: url(Raleway-Regular.ttf);
 }
 
-.footer-line, .header-line{
-	height: 80px;
+body {
+	font-family: Raleway;
 }
 
-/*
-* {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}*/
-
-.row.is-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-.row.is-flex > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/*
-* And with max cross-browser enabled.
-* Nobody should ever write this by hand. 
-* Use a preprocesser with autoprefixing.
-*/
-.row.is-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.row.is-flex > [class*='col-'] {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+.link {
+	color: #9E9E9E;
 }
