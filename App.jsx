@@ -5,7 +5,7 @@ class App extends Component{
 
 	render() {
 		return (
-			<div>
+			<div className="col-md-12">
 				<div>
 					<h2>Projects</h2>
 					<hr></hr>
@@ -32,10 +32,10 @@ class App extends Component{
 				</div>
 				<div>
 					<ul>
-						<li><a href="www.github.com/teovoinea/txtr">txtr</a> Send sms campaigns from a simple csv</li>
-						<li><a href="https://github.com/FutureProg/Caster">Caster</a> Podcast service</li>
-						<li><a href="https://github.com/rtemelkovski/MemNotes">MemNotes</a> Communication system for patients suffering from mental illness</li>
-						<li><a href="https://github.com/nazimamin/YHack-FillSeat">FillSeat</a> 🚁 Fill those last few seats on your flight</li>
+						<li><p><strong><a className="link" href="www.github.com/teovoinea/txtr">txtr</a></strong> - Send sms campaigns from a simple csv</p></li>
+						<li><p><strong><a className="link" href="https://github.com/FutureProg/Caster">Caster</a></strong> - Podcast service</p></li>
+						<li><p><strong><a className="link" href="https://github.com/rtemelkovski/MemNotes">MemNotes</a></strong> - Communication system for patients suffering from mental illness</p></li>
+						<li><p><strong><a className="link" href="https://github.com/nazimamin/YHack-FillSeat">FillSeat</a></strong> - 🚁 Fill those last few seats on your flight</p></li>
 					</ul>
 				</div>
 			</div>
