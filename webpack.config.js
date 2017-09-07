@@ -1,5 +1,8 @@
+const webpack = require('webpack');
+
 var config = {
 	entry: './main.js',
+	devTool: 'cheap-module-source-map',
 
 	output: {
 		path: './',
@@ -23,7 +26,15 @@ var config = {
 				}
 			}
 		]
-	}
+	},
+
+	plugins: [
+		new webpack.DefinePlugin({
+			'process.env': {
+			'NODE_ENV': JSON.stringify('production')
+			}
+		})
+	]
 }
 
 module.exports = config;

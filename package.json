@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "release": "webpack -p --optimize-minimize"
+    "release": "webpack -p --optimize-minimize --progress"
   },
   "author": "Teodor Voinea",
   "dependencies": {
