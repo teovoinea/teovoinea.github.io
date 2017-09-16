@@ -70,3 +70,8 @@ body {
 .link {
 	color: #9E9E9E;
 }
+
+.contact-link {
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
