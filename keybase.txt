@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/teovoinea
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://teovoinea.com
+  * I am teovoinea (https://keybase.io/teovoinea) on keybase.
+  * I have a public key with fingerprint BEDF AFF0 7F21 4AE4 276F  B820 06AE BD2E 61A7 E81A
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101bcdd2000ab10dd038b23f25574ba28a6f00fccfd2f0448e82e8a876c1348fd590a",
+      "fingerprint": "bedfaff07f214ae4276fb82006aebd2e61a7e81a",
+      "host": "keybase.io",
+      "key_id": "06aebd2e61a7e81a",
+      "kid": "0101bcdd2000ab10dd038b23f25574ba28a6f00fccfd2f0448e82e8a876c1348fd590a",
+      "uid": "a6136e6d044f5683725073b02a921819",
+      "username": "teovoinea"
+    },
+    "service": {
+      "hostname": "teovoinea.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1509399320,
+  "expire_in": 157680000,
+  "prev": "b5bd63823cf48e9c3d131171736f975d8f9498253548cd5708d6ce5e30802ca5",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMImAnicrZJbSFRBGMd3S7sIalSYSgkdo8Q2mZlzm7MlYVcKSqh8KIJtzpk5dtA9
+Z909u2pLPazQ/YJkD209RUXEhhVJZEXZhQpBwkyCoCAy08IIChUim9PlpV57Gmbm
+9/9//+/je5A72ZfjPzFx98PJwarb/u6udNy3dfRUYVLQHdosBJNCHft5sHrKYm6o
+zqJCUAAQQN2gFAEAiA4BpUDEOhJNJMuqpBOEiWICYBqGSZEJJAkzjBgmWFUMKErY
+pLIGiBAQTMuuZdFI1LJdbqszahLTBKqJoESYhFTF1DEvohCmU8QUSFSGoSfc6cQ8
+BQ+nkxirsBz+xi+hX/H+5f9z7vhPO6JAUWEK5aApK1hUkQxUUQeIaAhiqHlgjEVt
+EmacdpmTcCybEWF3QODPCctg3mS9Vv5GKgwnzNWRqOM6hlPPv3a6biQW9KRuc8Rj
+G5ke+u0S0i2b8klyRYJFY5ZjC0HIScO1PFsoA03UNBGBgMCaIlaUhSyPkFUF80EA
+rw5LePOXdaqIGImGyTvXDJFCEUIVqqJiaqpMsalJGkayKEvYoLIKMFUMJjMRYIAM
+IgteXw22w701npPUcs+YVWsTNx5lwu57d7dn+fw5vinZk7wV8+VMn/Fn8Qqqp07o
+b/O/tKReDZxeOOJ70rpn4nxqvlh/eXvJtah6cPbauatzW1d+iq/TL2cVaHmLMjNv
+ht9P68ge99uLO7eU3OjN9LLnm04VP1tVnr922Pe0NPtAdc+mdwvKXx2a1DIuLxgO
+P3Jqm9JjN4svfcLbroxeLdu1+XvDy+NNc3ZkTS+iDfGi+2NlscM1dKb7uC0+PvCx
+LdMZbHzSncwzPrdnLuLmB2dLh6aOwKXLO7oCb/aPXmATex++WF1Zd2dhz5R9wVTo
+6PrCedfPnjnXNzL07tsGeGt9X1VrakWybHQgvbHfN9j+pmZJ77IjRfPSG0a+VoWL
+vx15XXK16+UxoaCyA32dNbYm0/8DxypGUg==
+=4iJG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/teovoinea
+
+==================================================================
