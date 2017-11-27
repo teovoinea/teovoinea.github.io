@@ -32,6 +32,7 @@ class App extends Component{
 				</div>
 				<div>
 					<ul>
+						<li><p><strong><a className="link" href="https://www.github.com/Rumsha7/signkit-learn">signkit-learn</a></strong> - A web app that allows users to practice their sign language skills</p></li>
 						<li><p><strong><a className="link" href="https://www.github.com/teovoinea/txtr">txtr</a></strong> - Send sms campaigns from a simple csv</p></li>
 						<li><p><strong><a className="link" href="https://github.com/FutureProg/Caster">Caster</a></strong> - Podcast service</p></li>
 						<li><p><strong><a className="link" href="https://github.com/rtemelkovski/MemNotes">MemNotes</a></strong> - Communication system for patients suffering from mental illness</p></li>
