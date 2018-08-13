@@ -1,0 +1,77 @@
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+#footer, #header {
+	text-align: center;
+}
+
+p{
+	font-size: 1.3em;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+.btn{
+	align-self: center;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (min-width: 768px) {
+	.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+		flex-wrap: wrap;
+	}
+
+	.row > [class*='col-'] {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.spacing {
+	height: 100%;
+}
+
+.project {
+	padding-bottom: 10%;
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url(Raleway-Regular.ttf);
+}
+
+body {
+	font-family: Raleway;
+}
+
+.link {
+	color: #9E9E9E;
+}
+
+.contact-link {
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}

@@ -1,77 +1,88 @@
-/** {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}*/
-
-#footer, #header {
-	text-align: center;
-}
-
-p{
-	font-size: 1.3em;
-}
-
-a{
-	color: black;
-	text-decoration: none;
-	text-align: center;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-img{
-	width: 100%;
-}
-
-.btn{
-	align-self: center;
-}
-
-ul{
-	list-style: none;
-	padding-left: 0;
-}
-
-@media (min-width: 768px) {
-	.row {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display:         flex;
-		flex-wrap: wrap;
-	}
-
-	.row > [class*='col-'] {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-.spacing {
-	height: 100%;
-}
-
-.project {
-	padding-bottom: 10%;
-}
-
-@font-face {
-	font-family: Raleway;
-	src: url(Raleway-Regular.ttf);
-}
-
-body {
-	font-family: Raleway;
-}
-
-.link {
-	color: #9E9E9E;
-}
-
-.contact-link {
-	padding-left: 0.5%;
-	padding-right: 0.5%;
-}
+.lt_grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas: "Header Header Header" "AboutMe AboutMe AboutMe" "Projects Projects Projects" "ProjectA ProjectB ProjectC" "ProjectList ProjectList ProjectList" "Footer Footer Footer";
+  }
+  
+  .lt_Header { grid-area: Header; }
+  
+  .lt_AboutMe { grid-area: AboutMe; }
+  
+  .lt_Projects { grid-area: Projects; }
+  
+  .lt_ProjectA { grid-area: ProjectA; }
+  
+  .lt_ProjectB { grid-area: ProjectB; }
+  
+  .lt_ProjectC { grid-area: ProjectC; }
+  
+  .lt_ProjectList { grid-area: ProjectList; }
+  
+  .lt_Footer { grid-area: Footer; }
+  
+  @media all and (-ms-high-contrast: none) {
+    .lt_grid-container {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+  
+    .lt_Header {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+  
+    .lt_AboutMe {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+  
+    .lt_Projects {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+  
+    .lt_ProjectA {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+  
+    .lt_ProjectB {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+    }
+  
+    .lt_ProjectC {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+    }
+  
+    .lt_ProjectList {
+      -ms-grid-row: 5;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+  
+    .lt_Footer {
+      -ms-grid-row: 6;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+  }
