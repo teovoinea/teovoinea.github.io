@@ -2,74 +2,93 @@
 <html lang="en">
 
 	<head>
-		<meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Teodor Voinea</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
+        <title>Teodor Voinea</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script>
+                var stringCount = 0;
+                var oneliners = [
+                            "Open Source Software Developer",
+                            "Coffee Lover",
+                            "Tinkerer",
+                            "Linux Enthusiast"];
+                setInterval(function() {
+                        document.getElementById('dynamic-oneliner').innerHTML = oneliners[stringCount % oneliners.length];
+                        stringCount++;
+                    },
+                5000);
+        </script>
+    </head>
 
-	<body>
-		<div class="container">
-				<div id="header">
-					<h1>Teodor Voinea</h1>
-					<br>
-					<p id="dynamic-oneliner">Open Source Software Developer</p>
-				</div>
-				<script>
-					var stringCount = 0;
-					var oneliners = [
-								"Open Source Software Developer",
-								"Coffee Lover",
-								"Tinkerer",
-								"Linux Enthusiast"];
-					setInterval(function() {
-							document.getElementById('dynamic-oneliner').innerHTML = oneliners[stringCount % oneliners.length];
-							stringCount++;
-						},
-					5000);
-				</script>
-		<div class="row">
-			<div class="col-md-12">
-					<div style="width:100%;">
-							<h2>About me</h2>
-							<hr></hr>
-						</div>
-						
-						
-						<p>I am a <strong>computer science</strong> student from  McMaster University. I love to build apps and tools, particularly for <strong>open source</strong>. Currently, I am building 
-						a steganography library in Rust. My next project is looking into using <strong>machine learning</strong> to predict flight delays.</p>
-						<p>My favorite languages are Rust, C#, Python and Javascript. You can check out all of my open source contributions on <strong><a class="link" href="https://www.github.com/teovoinea">github</a></strong>
-							or a quick summary of my projects below!</p>
-			</div>
-			
-		</div>
-		<div class="row" id="app"></div>
+    <body>
+        <div class="lt_grid-container">
+            <div class="lt_Header">
+                <h1>Teodor Voinea</h1>
 
-		<div id="footer">
-			<p>
-				<a href="https://linkedin.com/in/teodorvoinea" class="contact-link link"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-				<a href="mailto:voinea.teodor@gmail.com" class="contact-link link"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-				<a href="https://github.com/teovoinea" class="contact-link link"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/teovoinea" class="contact-link link"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-				<a href="https://medium.com/@teovoinea" class="contact-link link"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
-				<a href="https://keybase.io/teovoinea" class="contact-link link"><i class="fa fa-key fa-2x" aria-hidden="true"></i></a>
-				<br>
-				Teodor Voinea - 2018
-			</p>
-		</div>
-		<script src="index.js"></script>
-		</div>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-61160079-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
+                <p id="dynamic-oneliner">Open Source Software Developer</p>
+            </div>
+
+            <div class="lt_AboutMe">
+                <h2>About Me</h2>
+                <hr>
+                <p>
+                    I am a developer interested in web assembly and peer to peer technologies.
+                    I write Rust, C#, JS and Python for fun and work.
+                    I'm a CS student graduating from McMaster university April 2019.
+                </p>
+            </div>
+
+            <div class="lt_Projects">
+                <h2>Projects</h2>
+                <hr>
+            </div>
+
+            <div class="lt_ProjectA">
+                <img src="https://raw.githubusercontent.com/teovoinea/GLIFRP/master/GLIFRP.png?token=AHxextkSPxcdws0MSVTnbPST6fBJwKSTks5XHmigwA%3D%3D">
+                <h3>GLIFRP</h3>
+                <p>Geo webapp to find the best places to live</p>
+                <a href="https://github.com/teovoinea/GLIFRP"><button>Source</button></a>
+            </div>
+
+            <div class="lt_ProjectB">
+                <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/565/830/datas/gallery.jpg">
+                <h3>Sign Kit Lean</h3>
+                <p>Learning ASL with a bot</p>
+                <a href="https://github.com/Rumsha7/signkit-learn"><button>Source</button></a>
+            </div>
+
+            <div class="lt_ProjectC">
+                <img src="https://crates.io/assets/Cargo-Logo-Small-c39abeb466d747f3be442698662c5260.png">
+                <h3>Steganography</h3>
+                <p>A simple steganography library written in rust</p>
+                <a href="https://github.com/teovoinea/steganography"><button>Source</button></a>
+            </div>
+
+            <div class="lt_ProjectList">
+                <ul>
+                    <li><strong><a href="https://github.com/icefalcn/pgp2img">pgp2img</a></strong> - Encrypt files or messages in plain sight</li>
+                    <li><strong><a href="https://www.github.com/teovoinea/txtr">txtr</a></strong> - Send sms campaigns from a simple csv</li>
+                    <li><strong><a href="https://github.com/FutureProg/Caster">Caster</a></strong> - Podcast service</li>
+                    <li><strong><a href="https://github.com/rtemelkovski/MemNotes">Memnotes</a></strong> - Communication system for patients suffering from mental illness</li>
+                    <li><strong><a href="https://github.com/nazimamin/YHack-FillSeat">FillSeat</a></strong> -  Fill those last few seats on your flight</li>
+                </ul>
+            </div>
+
+            <div class="lt_Footer">
+                <p>
+                    <a href="https://linkedin.com/in/teodorvoinea" class="contact-link link"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a href="mailto:voinea.teodor@gmail.com" class="contact-link link"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/teovoinea" class="contact-link link"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/teovoinea" class="contact-link link"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://medium.com/@teovoinea" class="contact-link link"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://keybase.io/teovoinea" class="contact-link link"><i class="fa fa-key fa-2x" aria-hidden="true"></i></a>
+                    <br>
+                    Teodor Voinea - 2018
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
